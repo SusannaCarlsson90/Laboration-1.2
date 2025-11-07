@@ -68,3 +68,8 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
 }
 
 /**Media query**/
+@media(max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
