@@ -61,11 +61,11 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
 }
 
 /**Grids**/ 
-.main-grid {
+/*.main-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-gap: 1em;
-}
+} */
 
 /**Media query**/
 @media(max-width: 900px) {
@@ -81,8 +81,12 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     bottom: 0;
     left: 0;
     width: 100%;
-    
-
 
   } 
+  .main-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
  }
