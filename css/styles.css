@@ -1,13 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 body {
-  background-color: beige;
+  background-color: grey;
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 3em;
  
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 main {
   background-color: whitesmoke;
   padding: 1em;
 }
+.main-header h1 {
+font-size: 5em;
+text-align: center;
+color: aquamarine;
+text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bild bakom*/
+}
+
+.main-header {
+  margin-top: 20vh; /*viewport hela fönstret = 100*/ 
+}
+
+/**Huvudmeny**/
+.main-header nav ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header nav li {
+  display: inline-block; /*får menyn på samma rad istället för att dom ligger som egna blockelement. Skillnad inline och inline block = inline blir bara text men med inline block kan vi styra padding, stolek osv*/ 
+  margin-right: -1px; /*tog bort lite av mellanrummen mellan knapparna*/
+}
+
+/*stylar A taggen istället för li för att man ska kunna klicka på hela ytan*/
+.main-header nav li a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px; /*sätter jag line height på samma som height hamnar texten i mitten*/
+  background-color: rgba(255, 255, 255, 0.7); /*lite transparens på knapparna så bakgrunden syns igenom*/
+  text-decoration: none; /*bort med understreck*/
+  color: black;
+  padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
+  transition: background-color 0.3s; /*animerar in till färgen så övergånen blir snyggare*/
+
+}
+
+.main-header nav li.current a {
+  background-color: rgba(255, 255, 255, 1); /*tydligt vilken sida man står på*/
+}
+
+.main-header nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/**Grids**/ 
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 1em;
+}
+
+/**Media query**/
