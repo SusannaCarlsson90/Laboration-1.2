@@ -73,3 +73,16 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     grid-template-columns: 1fr;
   }
 }
+ /* #news {order 2;} = hur dom hamnar i ordning 1,2 3. */
+
+ @media(max-width: 600px) {
+  .main-header nav {
+    position: fixed; /*sitter kvar alltid oavsett hur den scrollas*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+
+
+  } 
+ }
