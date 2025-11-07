@@ -85,6 +85,7 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
   } 
   .main-header nav ul {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     gap: 1em;
     justify-content: center;
