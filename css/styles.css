@@ -91,6 +91,7 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     flex-wrap: nowrap;
     gap: 0.3em;
     justify-content: space-between;
+    padding: 0 0.3em; /*så knapparna inte ligger direkt mot skärmkanten*/
   }
 
   .main-header nav li {
