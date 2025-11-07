@@ -89,7 +89,7 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1em;
+    gap: 0.3em;
     justify-content: space-between;
   }
 
@@ -97,9 +97,12 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     flex: 1;
   }
   .main-header nav li a {
-    width: auto;
+    width: 100%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 0.8em; 
+  }
+  body {
+    font-size: 1.5em;
   }
 
  }
