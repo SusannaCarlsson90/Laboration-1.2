@@ -81,6 +81,9 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: auto;
+    white-space: nowrap;
 
   } 
   .main-header nav ul {
@@ -89,5 +92,10 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
     flex-wrap: nowrap;
     gap: 1em;
     justify-content: center;
+  }
+  .main-header nav li a {
+    width: auto;
+    text-align: center;
+    font-size: 1.2em;
   }
  }
