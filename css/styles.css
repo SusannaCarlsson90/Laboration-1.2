@@ -8,7 +8,7 @@ body {
  
 }
 .container {
-  max-width: 1140px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -16,11 +16,20 @@ main {
   background-color: whitesmoke;
   padding: 1em;
 }
+
+.main-header {
+  background: url("../assets/header.png");
+  background-size: cover; /*fyll hela ytan*/
+  background-position: center; /*centrerar*/
+
+}
 .main-header h1 {
-font-size: 5em;
+font-size: 4em;
 text-align: center;
-color: aquamarine;
+color: whitesmoke;
 text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bild bakom*/
+padding: 10px;
+margin: 5px;
 }
 
 .main-header {
@@ -60,6 +69,33 @@ text-shadow: 0 0 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bi
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+.bildserie {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  flex-wrap: wrap; /*radbryter snyggt på mindre skärmar*/
+  gap: 1rem;
+
+}
+
+.bildserie img {
+  width: 400px;
+  height: 400px;
+
+ border-radius: 10px; /*rundar hörnen*/
+}
+
+.katten {
+  object-position: top center;
+}
+
+.kossan {
+  object-position: center;
+}
+
+.blomman {
+  object-position: center;
+}
 /**Grids**/ 
 /*.main-grid {
   display: grid;
