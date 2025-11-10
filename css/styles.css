@@ -121,22 +121,31 @@ main {
 }
 
 figure {
+  display: flex;              
+  flex-direction: row;          /* sida vid sida på dator */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255,255,255,0.8);
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
+  gap: 1rem;                   /* lite luft mellan bilderna */
 }
 
 figure img {
-  width: 30%;
+  width: 350px;                  /* lite mindre än 50% för luft */
   border-radius: 8px;
-  height:500px;
+  height: 500px;                /* låt höjden följa proportionerna */
+ 
 }
 
 figcaption {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
+  width: 100%;                 /* gör att texten hamnar under båda bilderna */
 }
+
 
 
 /**Media query**/
@@ -183,11 +192,17 @@ figcaption {
     
   
   }
+  figure {
+    flex-direction: column;   /* staplar bilderna vertikalt */
+  }
 
   figure img {
-    width: 100%;          /* låter bilderna ta hela bredden */
-    display: block;       /* gör att de hamnar ovanpå varandra */
-    margin-bottom: 0.5rem; /* lite luft mellan bilderna */
+    width: 100%;              /* låt varje bild ta hela bredden */
+    max-height: none;
+  }
+
+  figcaption {
+    font-size: 1rem;
   }
 
   figcaption {
