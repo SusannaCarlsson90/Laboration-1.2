@@ -25,6 +25,10 @@ main {
   border-radius: 10px;
 }
 
+h2 {
+  text-align: center;
+}
+
 
 .main-header {
   background: url("../assets/header.png");
