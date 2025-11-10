@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 body {
   background-color: grey;
-  font-family: "Tangerine", cursive;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
+  font-size: 2em;
  
 }
 .container {
@@ -20,27 +20,38 @@ main {
 .main-header {
   background: url("../assets/header.png");
   background-size: cover; /*fyll hela ytan*/
-  background-position: center; /*centrerar*/
+  background-position: center; /*centrerar bilden*/
   opacity: 0.65; 
+  height: 50vh;
+  position: relative;
 
 
 }
 
 
-.main-header h1 {
-font-size: 4em;
-text-align: center;
-color: whitesmoke;
-text-shadow: 0 2px 10px rgba(0,0,0,0.6); /*textskugga använd för att se trots bild bakom*/
-padding: 10px;
-margin: 5px;
-}
+  .main-header h1 {
+    position: absolute;
+    top: 50%;        /* mitten i höjdled */
+    left: 50%;       /* mitten i bredd */
+    font-size: 2.5em;
+    color: beige;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    margin: 0;
+  }
 
-.main-header {
-  margin-top: 20vh; /*viewport hela fönstret = 100*/ 
-}
+
+
 
 /**Huvudmeny**/
+
+.main-header nav {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: left;
+  
+}
 .main-header nav ul {
   margin:0;
   padding: 0;
@@ -83,8 +94,8 @@ margin: 5px;
 }
 
 .bildserie img {
-  
-  height: 400px;
+  width: 300px;
+  height: 450px;
 
  border-radius: 10px; /*rundar hörnen*/
 }
@@ -109,22 +120,30 @@ margin: 5px;
 
 .redigeradebilder {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr; /* bara en kolumn */
+  gap: 2rem;
   justify-items: center;
-  align-items: start;
-  
-
 }
 
-.redigeradebilder img {
-  width: 100%;
-  max-width: 500px;
+figure {
+  background-color: rgba(255,255,255,0.8);
   border-radius: 10px;
-  object-fit: contain;
-  margin: 10px;
-  padding: 10px;
+  padding: 1rem;
+  text-align: center;
 }
+
+figure img {
+  width: 48%;
+  border-radius: 8px;
+  height:900px;
+}
+
+figcaption {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+
 /**Media query**/
 @media(max-width: 900px) {
   .main-grid {
