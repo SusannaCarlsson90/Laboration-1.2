@@ -31,12 +31,15 @@ main {
 
 }
 
-/* halvtransparent toning ovanpå bilden */
+
+/**Huvudmeny**/
+
+/* halvtransparent toning ovanpå bilden så texten träder fram mer */
 .main-header::before {
-  content: "";
+  content: ""; /*vill inte visa text bara en färgad yta*/
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25); /* mörk skugga över bilden */
+  inset: 0; /*fyll hela headern*/
+  background: rgba(0, 0, 0, 0.25); /* mörk skugga över bilden så att text och meny syns bättre */
 }
 
 
@@ -55,7 +58,6 @@ main {
 
 
 
-/**Huvudmeny**/
 
 .main-header nav {
   position: absolute;
@@ -85,6 +87,7 @@ main {
   
   padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
   transition: background-color 0.3s; /*animerar in till färgen så övergånen blir snyggare*/
+
   .main-header nav li a {
     color: #1a1a1a;
     font-weight: 600;
@@ -178,7 +181,7 @@ figcaption {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 255);
     white-space: nowrap;
 
   } 
