@@ -6,7 +6,7 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 body {
-  background-color: #e7e2d9;
+  background-color: #f3e6de;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -19,7 +19,11 @@ body {
 }
 
 main {
-  background-color: #f9f8f5; /* nästan vitt men varmt */
+  
+    background-color: #fffaf7; /* ljusare version */
+    border: 1px solid #f0d8c8;
+    box-shadow: 0 0 15px rgba(240, 200, 180, 0.3);
+    border-radius: 12px;
   color: #2f2f2f;            /* mörkgrå istället för svart */
   padding: 2rem;
   border-radius: 10px;
