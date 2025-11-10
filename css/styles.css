@@ -46,6 +46,15 @@ h2 {
 
 
 /**Huvudmeny**/
+.logo {
+  width: 300px;       /* eller 120px om du vill ha mindre */
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 1;         /* så den ligger ovanpå bakgrundslagret */
+}
+
 
 /* halvtransparent toning ovanpå bilden så texten träder fram mer */
 .main-header::before {
