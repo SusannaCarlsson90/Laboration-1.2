@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 body {
-  background-color: grey;
+  background-color: #e7e2d9;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -13,9 +13,12 @@ body {
 }
 
 main {
-  background-color: whitesmoke;
-  padding: 1em;
+  background-color: #f9f8f5; /* nästan vitt men varmt */
+  color: #2f2f2f;            /* mörkgrå istället för svart */
+  padding: 2rem;
+  border-radius: 10px;
 }
+
 
 .main-header {
   background: url("../assets/header.png");
@@ -28,17 +31,26 @@ main {
 
 }
 
+/* halvtransparent toning ovanpå bilden */
+.main-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* mörk skugga över bilden */
+}
 
-  .main-header h1 {
-    position: absolute;
-    top: 50%;        /* mitten i höjdled */
-    left: 50%;       /* mitten i bredd */
-    font-size: 2.5em;
-    color: beige;
-    text-align: center;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
-    margin: 0;
-  }
+
+.main-header h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f9f5e8; /* varm beige ton */
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.7);
+  z-index: 1;
+}
 
 
 
@@ -68,11 +80,15 @@ main {
   display: inline-block;
   height: 50px;
   line-height: 50px; /*sätter jag line height på samma som height hamnar texten i mitten*/
-  background-color: rgba(255, 255, 255, 0.7); /*lite transparens på knapparna så bakgrunden syns igenom*/
+  background-color: rgba(255, 255, 255, 255); /*lite transparens på knapparna så bakgrunden syns igenom*/
   text-decoration: none; /*bort med understreck*/
-  color: black;
+  
   padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
   transition: background-color 0.3s; /*animerar in till färgen så övergånen blir snyggare*/
+  .main-header nav li a {
+    color: #1a1a1a;
+    font-weight: 600;
+  }
 
 }
 
