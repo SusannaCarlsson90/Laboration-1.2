@@ -1,3 +1,9 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 body {
   background-color: #e7e2d9;
@@ -8,7 +14,7 @@ body {
  
 }
 .container {
-  max-width: 1500px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -27,6 +33,9 @@ main {
   opacity: 0.65; 
   height: 50vh;
   position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
 
 }
