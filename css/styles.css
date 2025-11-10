@@ -49,12 +49,20 @@ h2 {
 
 /* halvtransparent toning ovanpå bilden så texten träder fram mer */
 .main-header::before {
-  content: ""; /*vill inte visa text bara en färgad yta*/
+  content: "";
   position: absolute;
-  inset: 0; /*fyll hela headern*/
-  background: rgba(0, 0, 0, 0.25); /* mörk skugga över bilden så att text och meny syns bättre */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0; /* lägg lagret bakom innehållet */
+  pointer-events: none; /* gör att klick går igenom lagret */
 }
 
+.main-header img,
+.main-header h1,
+.main-header nav {
+  position: relative;
+  z-index: 1; /*lägger detta framför filtret så att logga osv blir klickbart och ej blockas av filter*/
+}
 
 .main-header h1 {
   position: absolute;
