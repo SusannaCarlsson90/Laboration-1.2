@@ -184,4 +184,14 @@ figcaption {
   
   }
 
+  figure img {
+    width: 100%;          /* låter bilderna ta hela bredden */
+    display: block;       /* gör att de hamnar ovanpå varandra */
+    margin-bottom: 0.5rem; /* lite luft mellan bilderna */
+  }
+
+  figcaption {
+    font-size: 0.9rem;     /* gör texten något mindre på mobil */
+  }
+
  }
