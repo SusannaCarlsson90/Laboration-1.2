@@ -247,4 +247,8 @@ figcaption {
     font-size: 0.9rem;     /* gör texten något mindre på mobil */
   }
 
+  h2 {
+    text-align: center;
+  }
+
  }
