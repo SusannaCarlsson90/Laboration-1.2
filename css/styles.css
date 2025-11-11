@@ -313,7 +313,7 @@ figcaption {
   h2 {
     text-align: center;
   }
-  
+
   .about figure {
     flex-direction: column;
     text-align: center;
@@ -321,6 +321,11 @@ figcaption {
 
   .about img {
     width: 250px;
+  }
+
+  .kored {
+    object-fit: cover;
+    object-position: center;
   }
 
  }
