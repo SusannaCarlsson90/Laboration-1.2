@@ -138,7 +138,8 @@ h2 {
 }
 
 .main-header nav li.current a {
-  background-color: rgba(255, 255, 255, 1); /*tydligt vilken sida man står på*/
+  background-color: #d8a47f; /* markerad sida */
+  color: #fffaf7;
 }
 
 .main-header nav li a:hover {
@@ -249,7 +250,7 @@ h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: #f0d8c8;
     white-space: nowrap;
 
   } 
@@ -294,11 +295,19 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 0.8em; 
+    background-color: #f0d8c8; /* samma färg som nav */
+    color: #3b2f2f;
   }
+
+
+  .main-header nav li a:hover {
+    background-color: #e5bfa6;
   body {
     font-size: 1.5em;
   }
-
+  .main-header nav li.current a {
+    background-color: #d8a47f; /* markerad sida */
+    color: #fffaf7; }
   
  .redigeradebilder figure {
       flex-direction: column;  /* stapla bilderna */
