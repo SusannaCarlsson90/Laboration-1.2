@@ -95,7 +95,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f9f5e8;
-  font-size: 1,5em;
+  font-size: 1.5em;
   text-align: center;
   text-shadow: 0 2px 15px rgba(0,0,0,0.7);
   z-index: 1;
@@ -130,12 +130,8 @@ h2 {
   
   padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
   transition: background-color 0.3s; /*animerar in till färgen så övergånen blir snyggare*/
-
-  .main-header nav li a {
-    color: #1a1a1a;
+  color: #1a1a1a;
     font-weight: 600;
-  }
-
 }
 
 .main-header nav li.current a {
@@ -241,11 +237,7 @@ h2 {
 
 
 /**Media query**/
-@media(max-width: 900px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
  /* #news {order 2;} = hur dom hamnar i ordning 1,2 3. */
 
  @media(max-width: 600px) {
@@ -285,8 +277,8 @@ h2 {
     font-size: 1.5em;
   }
 
-  @media (max-width: 700px) {
-    .redigeradebilder figure {
+  
+ .redigeradebilder figure {
       flex-direction: column;  /* stapla bilderna */
     }
   
@@ -314,4 +306,4 @@ h2 {
   }
 
   
- } }
+ } 
