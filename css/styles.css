@@ -243,85 +243,88 @@ h2 {
 /**Media query**/
 
  /* #news {order 2;} = hur dom hamnar i ordning 1,2 3. */
+ @media (max-width: 600px) {
 
- @media(max-width: 600px) {
   .main-header nav {
-    position: fixed; /*sitter kvar alltid oavsett hur den scrollas*/
+    position: fixed; /* sitter kvar alltid oavsett hur den scrollas */
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #f0d8c8;
     white-space: nowrap;
+    z-index: 10;
+  }
 
-  } 
   .main-header nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0.3em;
     justify-content: space-evenly;
-    padding: 0 0.3em; /*så knapparna inte ligger direkt mot skärmkanten*/
+    padding: 0 0.3em;
   }
+
   .logo {
-    position: absolute; 
-    top: 10%; /*flyttar ner 10% från header*/
-    left: 50%; /*placera vänstra kanten av loggan vid mitten av headern*/
-    transform: translateX(-50%); /*förstår ärligt inte vad detta gör men det var enda sättet att få loggan att hamna okej*/
+    display: block;
+    margin: 1rem auto 0 auto; /* centrerar horisontellt */
+    width: 250px;            
     height: auto;
-    width: 200px;   
-    z index: 2;
-    
   }
+
   .main-header {
-    
     position: relative;
+    text-align: center;
   }
+
   .main-header h1 {
-   
     font-size: 1.0em;
-  
   }
+
   .main-header p {
-   font-size: 0.5em;
-   margin: 5px;
-   padding: 5px;
+    font-size: 0.5em;
+    margin: 5px;
+    padding: 5px;
   }
-  
 
   .main-header nav li {
     flex: 1;
   }
+
   .main-header nav li a {
     width: 100%;
     text-align: center;
-    font-size: 0.8em; 
+    font-size: 0.8em;
     background-color: #f0d8c8; /* samma färg som nav */
     color: #3b2f2f;
   }
 
-
   .main-header nav li a:hover {
     background-color: #e5bfa6;
+  }
+
+  .main-header nav li.current a {
+    background-color: #d8a47f;
+    color: #fffaf7;
+  }
+
   body {
     font-size: 1.5em;
+    padding-bottom: 80px; /* luft under menyn så den inte täcker text */
   }
-  .main-header nav li.current a {
-    background-color: #d8a47f; /* markerad sida */
-    color: #fffaf7; }
-  
- .redigeradebilder figure {
-      flex-direction: column;  /* stapla bilderna */
-    }
-  
-    .redigeradebilder figure img {
-      width: 90%;
-      max-width: 400px;
-      height: auto;
-    }
-  
-    .redigeradebilder figcaption {
-      font-size: 0.9rem;
-    }
+
+  .redigeradebilder figure {
+    flex-direction: column;
+  }
+
+  .redigeradebilder figure img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .redigeradebilder figcaption {
+    font-size: 0.9rem;
+  }
 
   h2 {
     text-align: center;
@@ -330,11 +333,10 @@ h2 {
   .about figure {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .about img {
     width: 250px;
   }
-
-  
- } 
+}
