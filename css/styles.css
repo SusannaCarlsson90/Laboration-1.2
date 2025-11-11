@@ -274,6 +274,7 @@ h2 {
   .main-header {
     position: relative;
     text-align: center;
+    opacity: 1; 
   }
 
   .main-header h1 {
