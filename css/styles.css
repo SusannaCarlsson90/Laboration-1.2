@@ -10,7 +10,7 @@ body {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em;
  
 }
 .container {
@@ -32,6 +32,7 @@ main {
 h2 {
   text-align: center;
 }
+
 
 
 .main-header {
@@ -72,7 +73,7 @@ h2 {
 
 .main-header img,
 .main-header h1,
-.main-header nav {
+.main-header nav, .main-header p {
   position: relative;
   z-index: 1; /*lägger detta framför filtret så att logga osv blir klickbart och ej blockas av filter*/
 }
@@ -88,6 +89,21 @@ h2 {
   text-shadow: 0 2px 15px rgba(0,0,0,0.7);
   z-index: 1;
 }
+.main-header p {
+  position: absolute;
+  top: 60%; /* flytta den under rubriken */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f9f5e8;
+  font-size: 1,5em;
+  text-align: center;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+
+ 
+
 
 
 
