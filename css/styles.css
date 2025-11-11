@@ -203,18 +203,44 @@ figure {
 }
 
 figure img {
-  width: 350px;                  /* lite mindre än 50% för luft */
+  width: 350px;                  
   border-radius: 8px;
-  height: 500px;                /* låt höjden följa proportionerna */
+  height: 500px;                
  
 }
 
 figcaption {
   font-size: 1.5rem;
   margin-top: 0.5rem;
-  width: 100%;                 /* gör att texten hamnar under båda bilderna */
+  width: 100%;                 
 }
 
+.about figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;                /* Avstånd mellan bild och text */
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.about img {
+  width: 350px;             
+  height: auto;             /* Bevara proportioner – undvik hoptryckning */
+  border-radius: 16px;
+}
+
+.about figcaption {
+  flex: 1; /*får ta upp så mycket utrymme som möjligt av det som finns kvar i raden*/
+}
+
+.about h2 {
+  margin-top: 0;
+}
 
 
 /**Media query**/
@@ -286,6 +312,15 @@ figcaption {
 
   h2 {
     text-align: center;
+  }
+  
+  .about figure {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 250px;
   }
 
  }
