@@ -258,12 +258,31 @@ h2 {
     justify-content: space-evenly;
     padding: 0 0.3em; /*så knapparna inte ligger direkt mot skärmkanten*/
   }
-
+  .logo {
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 200px;   /* eller vilken storlek du vill */
+    z index: 2;
+    
+  }
+  .main-header {
+    
+    position: relative;
+  }
   .main-header h1 {
    
-    font-size: 1.5em;
+    font-size: 1.0em;
   
   }
+  .main-header p {
+   font-size: 0.5em;
+   margin: 5px;
+   padding: 5px;
+  }
+  
 
   .main-header nav li {
     flex: 1;
