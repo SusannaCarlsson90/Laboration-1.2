@@ -4,10 +4,11 @@ html, body {
   padding: 0;
 }
 
+/*typsnitt från google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 body {
   background-color: #f3e6de;
-  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-family: "Zalando Sans SemiExpanded", sans-serif; /*text från google fonts*/
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
@@ -23,10 +24,9 @@ main {
     background-color: #f9f3ee;; 
     border: 1px solid #e3cbb8;
     box-shadow: 0 0 15px rgba(240, 200, 180, 0.3);
-    border-radius: 12px;
-  
+    border-radius: 15px;
   padding: 2rem;
-  border-radius: 10px;
+  
 }
 
 h2 {
@@ -39,7 +39,7 @@ h2 {
   background: url("../assets/header.png");
   background-size: cover; /*fyll hela ytan*/
   background-position: center; /*centrerar bilden*/
-  opacity: 0.65; 
+  opacity: 0.55; /*genomskinlighet*/
   height: 50vh;
   position: relative;
   width: 100%;
@@ -62,10 +62,10 @@ h2 {
 
 
 /* halvtransparent toning ovanpå bilden så texten träder fram mer */
-.main-header::before {
-  content: "";
+.main-header::before { 
+  content: ""; /*vill ej visa text i content så gör en tom textsträng*/
   position: absolute;
-  inset: 0;
+  inset: 0; /*kortskrivning för alla positioner istället för top: 0 etc.*/
   background: rgba(0, 0, 0, 0.25);
   z-index: 0; /* lägg lagret bakom innehållet */
   pointer-events: none; /* gör att klick går igenom lagret */
@@ -91,9 +91,9 @@ h2 {
 }
 .main-header p {
   position: absolute;
-  top: 60%; /* flytta den under rubriken */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 60%; /* övre kant hamnar 60% av höjden på sin förälder*/
+  left: 50%; /*elementets vänstra kant hamnar i mitten / 50% av sin förälders bredd**/
+  transform: translate(-50%, -50%); /*elementet blir bra centrerat*/
   color: #f9f5e8;
   font-size: 1.5em;
   text-align: center;
@@ -132,7 +132,7 @@ h2 {
   text-decoration: none; /*bort med understreck*/
   
   padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
-  transition: background-color 0.3s; /*animerar in till färgen så övergånen blir snyggare*/
+  transition: background-color 0.3s; /*animerar in till färgen så övergången blir snyggare*/
   color: #1a1a1a;
     font-weight: 600;
 }
@@ -274,7 +274,7 @@ h2 {
   .main-header {
     position: relative;
     text-align: center;
-    opacity: 1; 
+    opacity: 0.9; /*lite mindre opacity eftersom det blir väldigt svårt att se knapparna annars i nav menyn*/
   }
 
   .main-header h1 {
@@ -289,6 +289,7 @@ h2 {
 
   .main-header nav li {
     flex: 1;
+    
   }
 
   .main-header nav li a {
@@ -297,6 +298,7 @@ h2 {
     font-size: 0.8em;
     background-color: #f0d8c8; /* samma färg som nav */
     color: #3b2f2f;
+   
   }
 
   .main-header nav li a:hover {
