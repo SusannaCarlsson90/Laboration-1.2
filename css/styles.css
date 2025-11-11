@@ -20,11 +20,11 @@ body {
 
 main {
   
-    background-color: #fffaf7; /* ljusare version */
-    border: 1px solid #f0d8c8;
+    background-color: #f9f3ee;; 
+    border: 1px solid #e3cbb8;
     box-shadow: 0 0 15px rgba(240, 200, 180, 0.3);
     border-radius: 12px;
-  color: #2f2f2f;            /* mörkgrå istället för svart */
+  
   padding: 2rem;
   border-radius: 10px;
 }
@@ -125,7 +125,9 @@ h2 {
   display: inline-block;
   height: 50px;
   line-height: 50px; /*sätter jag line height på samma som height hamnar texten i mitten*/
-  background-color: rgba(255, 255, 255, 255); /*lite transparens på knapparna så bakgrunden syns igenom*/
+  background-color: #f0d8c8; /* varm beige */
+  color: #3b2f2f;
+  
   text-decoration: none; /*bort med understreck*/
   
   padding: 0 1em 0 1em; /*padding ej uppe, till höger, inget nere, till vänster*/
@@ -139,7 +141,7 @@ h2 {
 }
 
 .main-header nav li a:hover {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #e5bfa6;
 }
 
 .bildserie {
@@ -260,11 +262,11 @@ h2 {
   }
   .logo {
     position: absolute; 
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10%; /*flyttar ner 10% från header*/
+    left: 50%; /*placera vänstra kanten av loggan vid mitten av headern*/
+    transform: translateX(-50%); /*förstår ärligt inte vad detta gör men det var enda sättet att få loggan att hamna okej*/
     height: auto;
-    width: 200px;   /* eller vilken storlek du vill */
+    width: 200px;   
     z index: 2;
     
   }
