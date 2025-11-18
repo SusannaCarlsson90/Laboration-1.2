@@ -248,6 +248,10 @@ h2 {
     top: 40%;
   }
 
+  .main-header {
+    height: 70vh; /*ordnade bugg där h1 och p lade sig på varandra*/
+  }
+
   .main-header p {
     font-size: 1.5em;
     top: 62%;
